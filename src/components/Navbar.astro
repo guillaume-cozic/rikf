@@ -1,11 +1,12 @@
 ---
+const base = import.meta.env.BASE_URL;
 const links = [
-  { href: "/#about", label: "Le festival" },
-  { href: "/#competitions", label: "Compétitions" },
-  { href: "/#programme", label: "Programme" },
-  { href: "/#rodrigues", label: "Rodrigues" },
-  { href: "/association", label: "Association" },
-  { href: "/#inscription", label: "Inscription" },
+  { href: `${base}#about`, label: "Le festival" },
+  { href: `${base}#competitions`, label: "Compétitions" },
+  { href: `${base}#programme`, label: "Programme" },
+  { href: `${base}#rodrigues`, label: "Rodrigues" },
+  { href: `${base}association`, label: "Association" },
+  { href: `${base}#inscription`, label: "Inscription" },
 ];
 ---
 
@@ -13,9 +14,9 @@ const links = [
   class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-lagoon-100"
 >
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3 group" aria-label="RIKF 2026 — Accueil">
+    <a href={base} class="flex items-center gap-3 group" aria-label="RIKF 2026 — Accueil">
       <img
-        src="/logo-rikf.png"
+        src={`${base}logo-rikf.png`}
         alt="RIKF 2026 — Ride the Wind"
         class="h-12 w-auto transition-transform group-hover:scale-105"
         width="48"
@@ -41,7 +42,7 @@ const links = [
     </div>
 
     <a
-      href="/#inscription"
+      href={`${base}#inscription`}
       class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lagoon-500 hover:bg-lagoon-600 text-white font-semibold text-sm transition-all hover:scale-105 shadow-lg shadow-lagoon-400/40"
     >
       S'inscrire
@@ -67,7 +68,7 @@ const links = [
         ))
       }
       <a
-        href="/#inscription"
+        href={`${base}#inscription`}
         class="block text-center py-3 mt-2 rounded-full bg-lagoon-500 text-white font-semibold"
       >
         S'inscrire

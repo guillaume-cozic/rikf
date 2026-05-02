@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 
+const base = import.meta.env.BASE_URL;
+
 const pillars = [
   {
     title: "Former les moniteurs de kite",
@@ -221,7 +223,7 @@ const pillars = [
             </svg>
           </a>
           <a
-            href="/"
+            href={base}
             class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-deep-900 hover:bg-deep-800 text-white font-semibold transition-all"
           >
             Retour au festival

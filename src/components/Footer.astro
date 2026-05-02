@@ -1,5 +1,5 @@
 ---
-
+const base = import.meta.env.BASE_URL;
 ---
 
 <footer class="relative bg-deep-900 text-white border-t border-lagoon-700 pt-16 pb-8">
@@ -9,7 +9,7 @@
         <div class="flex items-center gap-4">
           <div class="bg-white p-1.5 rounded-xl">
             <img
-              src="/logo-rikf.png"
+              src={`${base}logo-rikf.png`}
               alt="RIKF 2026 — Ride the Wind"
               class="h-14 w-auto"
             />
@@ -35,12 +35,12 @@
       <div>
         <div class="text-xs uppercase tracking-widest text-lagoon-300 mb-4">Navigation</div>
         <ul class="space-y-2 text-sm text-white/80">
-          <li><a href="/#about" class="hover:text-lagoon-300 transition-colors">Le festival</a></li>
-          <li><a href="/#competitions" class="hover:text-lagoon-300 transition-colors">Compétitions</a></li>
-          <li><a href="/#programme" class="hover:text-lagoon-300 transition-colors">Programme</a></li>
-          <li><a href="/#rodrigues" class="hover:text-lagoon-300 transition-colors">Rodrigues</a></li>
-          <li><a href="/association" class="hover:text-lagoon-300 transition-colors">Association</a></li>
-          <li><a href="/#inscription" class="hover:text-lagoon-300 transition-colors">Inscription</a></li>
+          <li><a href={`${base}#about`} class="hover:text-lagoon-300 transition-colors">Le festival</a></li>
+          <li><a href={`${base}#competitions`} class="hover:text-lagoon-300 transition-colors">Compétitions</a></li>
+          <li><a href={`${base}#programme`} class="hover:text-lagoon-300 transition-colors">Programme</a></li>
+          <li><a href={`${base}#rodrigues`} class="hover:text-lagoon-300 transition-colors">Rodrigues</a></li>
+          <li><a href={`${base}association`} class="hover:text-lagoon-300 transition-colors">Association</a></li>
+          <li><a href={`${base}#inscription`} class="hover:text-lagoon-300 transition-colors">Inscription</a></li>
         </ul>
       </div>
 

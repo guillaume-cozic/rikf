@@ -1,5 +1,5 @@
 ---
-
+const base = import.meta.env.BASE_URL;
 ---
 
 <section
@@ -95,7 +95,7 @@
           <div class="absolute -inset-8 bg-gradient-to-br from-lagoon-300/40 via-lagoon-400/30 to-lagoon-200/20 rounded-[3rem] blur-2xl"></div>
           <div class="relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-lagoon-500/30 ring-1 ring-white">
             <img
-              src="/poster.jpeg"
+              src={`${base}poster.jpeg`}
               alt="Affiche RIKF 2026 — Rodrigues International Kite Surf Festival"
               class="w-full h-full object-cover"
               loading="eager"
