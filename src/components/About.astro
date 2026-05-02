@@ -1,0 +1,67 @@
+---
+const stats = [
+  { value: "11", label: "éditions" },
+  { value: "4", label: "jours de festival" },
+  { value: "2 650€", label: "de prize money" },
+  { value: "100%", label: "vibes Rodrigues" },
+];
+---
+
+<section id="about" class="relative py-24 sm:py-32 bg-white overflow-hidden">
+  <!-- Halos décoratifs -->
+  <div class="absolute -top-20 -right-20 w-96 h-96 bg-lagoon-200/40 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 -left-20 w-96 h-96 bg-lagoon-100/60 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div>
+        <div class="chip-light mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-lagoon-500"></span>
+          Le festival
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-tight text-deep-900">
+          Une édition <span class="text-lagoon-500">sous le signe</span> du renouveau
+        </h2>
+        <div class="mt-8 space-y-5 text-deep-900/75 text-lg leading-relaxed">
+          <p>
+            Pour sa <strong class="text-deep-900">11<sup>e</sup> édition</strong>,
+            le Rodrigues International Kitesurf Festival prend de l'altitude.
+            Du <strong class="text-deep-900">2 au 5 juillet 2026</strong>,
+            riders confirmés et amateurs de glisse se donnent rendez-vous sur le
+            mythique lagon de Mourouk.
+          </p>
+          <p>
+            Co-organisé par l'<strong class="text-deep-900">Office du Tourisme
+            de Rodrigues</strong> et <strong class="text-deep-900">Mourouk
+            Wind Sports</strong>, le festival célèbre la culture rodriguaise
+            autant que la performance sportive : compétitions, animations,
+            musique, cuisine locale et nuits étoilées.
+          </p>
+          <p class="text-lagoon-600 font-medium italic">
+            « Ride the Wind » — un mot d'ordre, un état d'esprit.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 sm:gap-6">
+        {
+          stats.map((s, i) => (
+            <div
+              class={`group relative p-6 sm:p-8 rounded-3xl border border-lagoon-100 bg-gradient-to-br from-white to-lagoon-50 hover:border-lagoon-300 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-lagoon-200/40 ${
+                i % 2 === 1 ? "translate-y-8" : ""
+              }`}
+            >
+              <div class="font-display text-5xl sm:text-6xl bg-gradient-to-br from-lagoon-400 to-lagoon-700 bg-clip-text text-transparent">
+                {s.value}
+              </div>
+              <div class="mt-3 text-sm uppercase tracking-widest text-deep-900/60">
+                {s.label}
+              </div>
+              <div class="absolute top-4 right-4 w-2 h-2 rounded-full bg-lagoon-400 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

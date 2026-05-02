@@ -1,0 +1,364 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+const pillars = [
+  {
+    title: "Former les moniteurs de kite",
+    tagline: "Une expertise locale reconnue",
+    description:
+      "Mettre en place un parcours de formation certifiant pour les jeunes Rodriguais : sécurité, pédagogie, gestion du matériel. Faire émerger une nouvelle génération de moniteurs capables d'accueillir des riders du monde entier.",
+    icon: "kite",
+    accent: "from-lagoon-400 to-lagoon-700",
+  },
+  {
+    title: "Apprendre à nager au lagon",
+    tagline: "Le lagon, terrain de jeu pour tous",
+    description:
+      "Beaucoup d'enfants rodriguais grandissent à quelques mètres de la mer sans jamais apprendre à nager. Notre programme propose des cours de natation gratuits, encadrés par des maîtres-nageurs, pour rendre le lagon accessible à toute la jeunesse.",
+    icon: "swim",
+    accent: "from-lagoon-300 to-lagoon-500",
+  },
+  {
+    title: "Initier à la voile",
+    tagline: "Optimist & Laser",
+    description:
+      "Former les jeunes à la voile sportive, avec des supports adaptés : Optimist pour les plus petits, Laser pour les ados. Goût de la compétition, autonomie, esprit d'équipe — et un terrain d'entraînement en or.",
+    icon: "sail",
+    accent: "from-sun-400 to-coral-500",
+  },
+];
+---
+
+<Layout
+  title="Notre mission — Association RIKF"
+  description="L'association porteuse du RIKF œuvre toute l'année pour former les moniteurs de kite, apprendre à nager aux jeunes Rodriguais et initier à la voile (Optimist, Laser)."
+>
+  <Navbar />
+
+  <main>
+    <!-- HERO -->
+    <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden bg-gradient-to-b from-lagoon-50 via-white to-white">
+      <div class="absolute inset-0 poster-waves opacity-60"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="chip-light mx-auto mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-lagoon-500"></span>
+          Notre mission
+        </div>
+        <h1 class="font-display text-5xl sm:text-7xl md:text-8xl uppercase leading-[0.9] text-deep-900">
+          Bien plus
+          <span class="block text-lagoon-500">qu'un festival</span>
+        </h1>
+        <p class="mt-8 text-lg sm:text-xl text-deep-900/75 max-w-3xl mx-auto leading-relaxed">
+          Le RIKF, c'est quatre jours de glisse au mois de juillet — mais c'est
+          surtout l'aboutissement d'un travail mené toute l'année par une association
+          locale, qui œuvre pour la jeunesse rodriguaise et le rayonnement de l'île.
+        </p>
+        <a
+          href="#piliers"
+          class="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-lagoon-500 hover:bg-lagoon-600 text-white font-semibold transition-all hover:scale-105 shadow-xl shadow-lagoon-400/40"
+        >
+          Découvrir nos actions
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- À PROPOS DU MWSC -->
+    <section class="relative py-20 sm:py-28 bg-white overflow-hidden">
+      <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-lagoon-100/60 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          <div class="lg:col-span-7">
+            <div class="chip-light mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-lagoon-500"></span>
+              Mourouk Wind Sports Club
+            </div>
+            <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-tight text-deep-900">
+              Le club qui structure
+              <span class="block text-lagoon-500">le kitesurf à Rodrigues</span>
+            </h2>
+            <div class="mt-8 space-y-5 text-deep-900/80 text-lg leading-relaxed">
+              <p>
+                Le <strong class="text-deep-900">Mourouk Wind Sports Club (MWSC)</strong>
+                porte une ambition simple : structurer le kitesurf rodriguais,
+                renforcer son développement et installer durablement l'île
+                sur la scène régionale et internationale des sports de glisse.
+              </p>
+              <p>
+                Au-delà du festival, le club agit toute l'année pour transmettre,
+                former et faire grandir la pratique localement — pour que Rodrigues
+                ne soit plus seulement une destination, mais une vraie école.
+              </p>
+            </div>
+          </div>
+
+          <!-- Andy Albert : carte présidence -->
+          <div class="lg:col-span-5">
+            <div class="relative p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-lagoon-500 to-lagoon-700 text-white shadow-2xl shadow-lagoon-500/30 overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+              <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-sun-400/20 rounded-full blur-2xl"></div>
+
+              <div class="relative">
+                <div class="flex items-start gap-4">
+                  <div class="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur border border-white/30 flex items-center justify-center font-display text-2xl flex-shrink-0">
+                    AA
+                  </div>
+                  <div>
+                    <div class="text-xs uppercase tracking-widest text-sun-400 font-semibold">Président du MWSC</div>
+                    <div class="font-display text-3xl uppercase mt-1">Andy Albert</div>
+                    <div class="text-xs text-white/80 mt-1">
+                      Directeur de course des 4 premières éditions du RIKF
+                    </div>
+                  </div>
+                </div>
+
+                <blockquote class="mt-6 pl-4 border-l-2 border-sun-400 italic text-white/95 leading-relaxed">
+                  « Rodrigues bénéficie de conditions de vent exceptionnelles
+                  tout au long de l'année, ainsi que d'un lagon particulièrement
+                  adapté à des formats comme le slalom. »
+                </blockquote>
+
+                <p class="mt-5 text-sm text-white/85 leading-relaxed">
+                  Figure reconnue du kitesurf local, Andy Albert affiche une
+                  feuille de route claire : relancer la dynamique du festival
+                  et attirer davantage de riders internationaux à Rodrigues.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILIERS -->
+    <section id="piliers" class="relative py-20 sm:py-28 bg-gradient-to-b from-white to-lagoon-50 overflow-hidden">
+      <div class="absolute -top-20 -right-20 w-96 h-96 bg-lagoon-100/50 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="chip-light mb-6 mx-auto">
+            <span class="w-1.5 h-1.5 rounded-full bg-coral-500"></span>
+            Trois piliers
+          </div>
+          <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-tight text-deep-900">
+            Faire grandir
+            <span class="block text-lagoon-500">la jeunesse rodriguaise</span>
+          </h2>
+        </div>
+
+        <div class="space-y-8">
+          {
+            pillars.map((p, i) => (
+              <article class="grid md:grid-cols-12 gap-6 md:gap-10 items-center p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-white to-lagoon-50 border border-lagoon-100">
+                <div class={`md:col-span-3 ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                  <div class={`w-24 h-24 rounded-3xl bg-gradient-to-br ${p.accent} flex items-center justify-center shadow-xl mx-auto md:mx-0`}>
+                    {p.icon === "kite" && (
+                      <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L4 8l8 14 8-14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M12 2v20" />
+                      </svg>
+                    )}
+                    {p.icon === "swim" && (
+                      <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2 13c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                        <circle cx="16" cy="6" r="2" />
+                      </svg>
+                    )}
+                    {p.icon === "sail" && (
+                      <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 18h18l-2 3H5l-2-3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v15M12 3L5 18h7" />
+                      </svg>
+                    )}
+                  </div>
+                </div>
+
+                <div class={`md:col-span-9 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                  <div class="text-xs uppercase tracking-widest text-lagoon-600 font-semibold">
+                    {p.tagline}
+                  </div>
+                  <h3 class="mt-2 font-display text-3xl sm:text-4xl uppercase text-deep-900 leading-tight">
+                    {p.title}
+                  </h3>
+                  <p class="mt-4 text-deep-900/75 leading-relaxed">
+                    {p.description}
+                  </p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUTENIR -->
+    <section id="contact" class="relative py-20 sm:py-28 overflow-hidden">
+      <div class="absolute inset-0 bg-lagoon-wave opacity-90"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/10 to-white/40"></div>
+
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="font-display text-5xl sm:text-6xl md:text-7xl uppercase leading-tight text-white drop-shadow-lg">
+            Nous <span class="text-deep-900">soutenir</span>
+          </h2>
+          <p class="mt-6 text-lg text-white/95 drop-shadow max-w-2xl mx-auto">
+            Sponsoring, dons de matériel, mécénat, bénévolat — toutes les bonnes
+            volontés font avancer l'association.
+          </p>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <form
+          id="contact-form"
+          class="mt-12 p-6 sm:p-8 rounded-3xl bg-white/95 backdrop-blur shadow-2xl border border-white space-y-5"
+          novalidate
+        >
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="contact-name" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
+                Nom <span class="text-coral-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                required
+                placeholder="Votre nom"
+                class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition"
+              />
+            </div>
+            <div>
+              <label for="contact-email" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
+                Email <span class="text-coral-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                required
+                placeholder="vous@exemple.com"
+                class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="contact-subject" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
+              Sujet
+            </label>
+            <select
+              id="contact-subject"
+              name="subject"
+              class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 transition"
+            >
+              <option value="Sponsoring RIKF 2026">Sponsoring RIKF 2026</option>
+              <option value="Mécénat / dons">Mécénat / dons</option>
+              <option value="Don de matériel">Don de matériel</option>
+              <option value="Bénévolat">Bénévolat</option>
+              <option value="Autre demande">Autre demande</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="contact-message" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
+              Message <span class="text-coral-500">*</span>
+            </label>
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              rows="5"
+              placeholder="Présentez votre projet, vos questions ou vos disponibilités..."
+              class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition resize-none"
+            ></textarea>
+          </div>
+
+          <p
+            id="contact-error"
+            class="hidden text-sm text-coral-500 font-medium"
+            role="alert"
+          >
+            Merci de remplir les champs obligatoires.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between pt-2">
+            <p class="text-xs text-deep-900/60">
+              En cliquant sur envoyer, votre messagerie s'ouvre avec un brouillon pré-rempli.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="/"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-deep-900/5 hover:bg-deep-900/10 text-deep-900 font-semibold text-sm transition"
+              >
+                Retour au festival
+              </a>
+              <button
+                type="submit"
+                class="group inline-flex items-center justify-center gap-3 px-7 py-3 rounded-full bg-lagoon-500 hover:bg-lagoon-600 text-white font-semibold transition-all hover:scale-105 shadow-xl shadow-lagoon-400/30"
+              >
+                Envoyer le message
+                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <p class="mt-6 text-center text-sm text-white/85">
+          Préférez un contact direct ?
+          <a href="mailto:mouroukwindsports@gmail.com" class="underline decoration-sun-400 decoration-2 underline-offset-4 hover:text-sun-400 transition">
+            mouroukwindsports@gmail.com
+          </a>
+          · <a href="tel:+23059073807" class="underline decoration-sun-400 decoration-2 underline-offset-4 hover:text-sun-400 transition">+230 59073807</a>
+        </p>
+      </div>
+    </section>
+
+    <script is:inline>
+      (function () {
+        const form = document.getElementById("contact-form");
+        const error = document.getElementById("contact-error");
+        if (!form) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = form.querySelector("[name=name]").value.trim();
+          const email = form.querySelector("[name=email]").value.trim();
+          const subject = form.querySelector("[name=subject]").value;
+          const message = form.querySelector("[name=message]").value.trim();
+
+          if (!name || !email || !message) {
+            error.classList.remove("hidden");
+            return;
+          }
+          error.classList.add("hidden");
+
+          const body =
+            "Bonjour,\n\n" +
+            message +
+            "\n\n— " +
+            name +
+            "\n" +
+            email;
+
+          const mailto =
+            "mailto:mouroukwindsports@gmail.com" +
+            "?subject=" +
+            encodeURIComponent("[RIKF] " + subject) +
+            "&body=" +
+            encodeURIComponent(body);
+
+          window.location.href = mailto;
+        });
+      })();
+    </script>
+  </main>
+
+  <Footer />
+</Layout>

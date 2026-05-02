@@ -1,0 +1,109 @@
+---
+const days = [
+  {
+    date: "Jeu. 2 juillet",
+    title: "Cérémonie d'ouverture",
+    items: [
+      "Accueil des riders & briefing",
+      "Inauguration officielle",
+      "Free ride collectif au coucher du soleil",
+      "Soirée d'ouverture sega",
+    ],
+  },
+  {
+    date: "Ven. 3 juillet",
+    title: "Slalom & Wingfoil",
+    items: [
+      "Manches éliminatoires Slalom",
+      "Compétition Wingfoil",
+      "Démonstrations & ateliers",
+      "Beach party au lagon",
+    ],
+  },
+  {
+    date: "Sam. 4 juillet",
+    title: "Big Air Show",
+    items: [
+      "Finales Slalom",
+      "Spectacle Big Air en lagon",
+      "Mini Raid — départ matinal",
+      "Concert live & food court rodriguais",
+    ],
+  },
+  {
+    date: "Dim. 5 juillet",
+    title: "Finales & remise des prix",
+    items: [
+      "Grandes finales Big Air",
+      "Cérémonie de clôture",
+      "Remise des trophées",
+      "After-party",
+    ],
+  },
+];
+---
+
+<section id="programme" class="relative py-24 sm:py-32 bg-white">
+  <div class="absolute top-1/2 left-0 w-72 h-72 bg-lagoon-100/60 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="chip-light mb-6 mx-auto">
+        <span class="w-1.5 h-1.5 rounded-full bg-sun-400"></span>
+        Programme
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-tight text-deep-900">
+        4 jours,
+        <span class="text-lagoon-500">une seule mission</span> :
+        <span class="block">profiter du vent</span>
+      </h2>
+    </div>
+
+    <div class="relative">
+      <!-- Vertical timeline -->
+      <div class="absolute left-4 sm:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-lagoon-300 via-lagoon-500 to-lagoon-300 sm:-translate-x-1/2"></div>
+
+      <div class="space-y-10 sm:space-y-16">
+        {
+          days.map((d, i) => (
+            <div
+              class={`relative pl-12 sm:pl-0 sm:grid sm:grid-cols-2 sm:gap-12 ${
+                i % 2 === 0 ? "" : "sm:[&>*:first-child]:col-start-2"
+              }`}
+            >
+              <div class={i % 2 === 0 ? "sm:text-right sm:pr-8" : "sm:pl-8"}>
+                <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 top-2 w-4 h-4 rounded-full bg-lagoon-500 ring-4 ring-white shadow-lg shadow-lagoon-500/40"></div>
+                <div class="text-sm font-bold uppercase tracking-widest text-lagoon-500">
+                  {d.date}
+                </div>
+                <h3 class="mt-2 font-display text-3xl sm:text-4xl uppercase text-deep-900">
+                  {d.title}
+                </h3>
+              </div>
+              <div
+                class={`mt-4 sm:mt-0 p-6 rounded-2xl bg-lagoon-50 border border-lagoon-100 ${
+                  i % 2 === 0 ? "sm:col-start-2" : "sm:col-start-1 sm:row-start-1 sm:text-right"
+                }`}
+              >
+                <ul class={`space-y-2.5 text-deep-900/80 ${i % 2 === 1 ? "sm:[&>li]:flex-row-reverse" : ""}`}>
+                  {d.items.map((it) => (
+                    <li class="flex items-start gap-3">
+                      <svg class="w-5 h-5 flex-shrink-0 mt-0.5 text-lagoon-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <p class="text-center text-deep-900/50 text-sm mt-12 italic">
+      Programme indicatif — les horaires définitifs sont confirmés selon les conditions météo.
+    </p>
+  </div>
+</section>

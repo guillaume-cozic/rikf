@@ -1,0 +1,121 @@
+---
+const competitions = [
+  {
+    name: "Big Air",
+    prize: "1 000 €",
+    description:
+      "Le show ultime : sauts, hauteur, technique aérienne. Les riders s'envolent au-dessus du lagon pour décrocher la plus belle figure.",
+    icon: "wind",
+    featured: true,
+  },
+  {
+    name: "Wingfoil",
+    prize: "550 €",
+    description:
+      "La discipline qui monte. Aile gonflable et foil sous les pieds : silence, vitesse et glisse pure.",
+    icon: "wing",
+  },
+  {
+    name: "Slalom",
+    prize: "550 €",
+    description:
+      "Course de vitesse sur parcours technique : enchaîner les bouées au plus près de l'eau, jusqu'à la ligne d'arrivée.",
+    icon: "flag",
+  },
+  {
+    name: "Mini Raid",
+    prize: "550 €",
+    description:
+      "Aventure côtière entre les criques rodriguaises. Endurance, navigation, dépassement de soi.",
+    icon: "compass",
+  },
+];
+---
+
+<section id="competitions" class="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-white via-lagoon-50 to-white">
+  <!-- Décor -->
+  <div class="absolute inset-0 poster-waves opacity-40"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="chip-light mb-6 mx-auto">
+        <span class="w-1.5 h-1.5 rounded-full bg-coral-500"></span>
+        Prize Competitions
+      </div>
+      <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-tight text-deep-900">
+        Quatre disciplines.
+        <span class="block text-lagoon-500">2 650 € à remporter.</span>
+      </h2>
+      <p class="mt-6 text-lg text-deep-900/70">
+        Des conditions de vent légendaires, un lagon turquoise, des juges
+        internationaux : le terrain de jeu rêvé pour briller.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {
+        competitions.map((c) => (
+          <article
+            class={`group relative rounded-3xl p-6 lg:p-7 border transition-all hover:-translate-y-2 ${
+              c.featured
+                ? "bg-gradient-to-br from-lagoon-500 to-lagoon-700 text-white border-lagoon-600 lg:scale-105 shadow-xl shadow-lagoon-500/30"
+                : "bg-white text-deep-900 border-lagoon-100 hover:border-lagoon-300 hover:shadow-xl hover:shadow-lagoon-200/40"
+            }`}
+          >
+            {c.featured && (
+              <div class="absolute -top-3 left-6 px-3 py-1 rounded-full bg-coral-500 text-white text-xs font-bold uppercase tracking-wider shadow-lg">
+                Star event
+              </div>
+            )}
+            <div class={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 shadow-lg ${
+              c.featured ? "bg-white/20 backdrop-blur" : "bg-gradient-to-br from-lagoon-100 to-lagoon-300"
+            }`}>
+              {c.icon === "wind" && (
+                <svg class={`w-7 h-7 ${c.featured ? "text-white" : "text-lagoon-700"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8h11a3 3 0 100-6M3 16h15a3 3 0 110 6M3 12h7" />
+                </svg>
+              )}
+              {c.icon === "wing" && (
+                <svg class={`w-7 h-7 ${c.featured ? "text-white" : "text-lagoon-700"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8S2 12 2 12z" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              )}
+              {c.icon === "flag" && (
+                <svg class={`w-7 h-7 ${c.featured ? "text-white" : "text-lagoon-700"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 21V4m0 0h12l-2 4 2 4H5" />
+                </svg>
+              )}
+              {c.icon === "compass" && (
+                <svg class={`w-7 h-7 ${c.featured ? "text-white" : "text-lagoon-700"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 9l-2 6-4 1 1-4 5-3z" />
+                </svg>
+              )}
+            </div>
+
+            <h3 class="font-display text-3xl uppercase tracking-wide">{c.name}</h3>
+            <div class={`mt-2 text-2xl font-bold ${c.featured ? "text-sun-400" : "text-coral-500"}`}>
+              {c.prize}
+            </div>
+            <p class={`mt-4 text-sm leading-relaxed ${c.featured ? "text-white/90" : "text-deep-900/70"}`}>
+              {c.description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="#inscription"
+        class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-deep-900 text-white font-semibold hover:bg-deep-800 transition-colors shadow-xl"
+      >
+        Réserver ma place
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

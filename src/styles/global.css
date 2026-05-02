@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  /* Lagon — bleu turquoise inspiré du poster */
+  --color-lagoon-50: #f0fbfd;
+  --color-lagoon-100: #d4f4f8;
+  --color-lagoon-200: #a8e8f0;
+  --color-lagoon-300: #6fd4e3;
+  --color-lagoon-400: #3bbcd1;
+  --color-lagoon-500: #1ba1ba;
+  --color-lagoon-600: #15829c;
+  --color-lagoon-700: #16687f;
+  --color-lagoon-800: #185468;
+  --color-lagoon-900: #144657;
+
+  /* Bleu profond (texte principal du poster) */
+  --color-deep-700: #1f3a5f;
+  --color-deep-800: #15314f;
+  --color-deep-900: #0e2542;
+
+  /* Accents secondaires (mini, comme sur le poster) */
+  --color-coral-400: #fb923c;
+  --color-coral-500: #f97316;
+  --color-magenta-500: #ec4899;
+  --color-sun-400: #facc15;
+
+  --font-display: "Anton", "Bebas Neue", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: var(--color-deep-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+@keyframes wave-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.bg-lagoon-wave {
+  background: linear-gradient(135deg, #6fd4e3 0%, #3bbcd1 25%, #1ba1ba 50%, #3bbcd1 75%, #a8e8f0 100%);
+  background-size: 400% 400%;
+  animation: wave-shift 18s ease infinite;
+}
+
+@keyframes scroll-hint {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.4; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.animate-scroll-hint { animation: scroll-hint 2s ease-in-out infinite; }
+
+/* Vagues décoratives (comme dans le poster) */
+.poster-waves {
+  background-image:
+    radial-gradient(ellipse 800px 200px at 20% 30%, rgba(168, 232, 240, 0.4), transparent 60%),
+    radial-gradient(ellipse 600px 300px at 80% 70%, rgba(111, 212, 227, 0.35), transparent 60%);
+}
+
+/* Chip blanc avec bordure lagon */
+.chip-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(27, 161, 186, 0.25);
+  color: var(--color-deep-900);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.chip-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(14, 37, 66, 0.06);
+  border: 1px solid rgba(14, 37, 66, 0.12);
+  color: var(--color-deep-900);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}

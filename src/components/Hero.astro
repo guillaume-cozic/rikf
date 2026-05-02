@@ -1,0 +1,124 @@
+---
+
+---
+
+<section
+  id="top"
+  class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-lagoon-50 via-white to-white"
+>
+  <!-- Vagues décoratives en arrière-plan (style poster) -->
+  <div class="absolute inset-0 poster-waves opacity-70"></div>
+
+  <!-- SVG vague subtile -->
+  <div class="absolute inset-0 opacity-30">
+    <svg class="w-full h-full" viewBox="0 0 1440 800" preserveAspectRatio="none" fill="none">
+      <path
+        d="M0,420 C240,340 480,520 720,440 C960,360 1200,520 1440,440 L1440,800 L0,800 Z"
+        fill="url(#grad1)"
+      />
+      <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#a8e8f0" stop-opacity="0.6" />
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <!-- Texte (gauche) -->
+      <div class="lg:col-span-7">
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="chip-light">
+            <span class="w-1.5 h-1.5 rounded-full bg-lagoon-500"></span>
+            #RideTheWind
+          </span>
+          <span
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coral-500 text-white font-semibold text-sm tracking-wide shadow-lg shadow-coral-500/30"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            2 → 5 juillet 2026
+          </span>
+        </div>
+
+        <h1 class="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tight uppercase text-deep-900">
+          <span class="block">Rodrigues</span>
+          <span class="block">International</span>
+          <span class="block text-lagoon-500">Kite Surf Festival</span>
+        </h1>
+
+        <p class="mt-8 text-lg sm:text-xl max-w-xl text-deep-900/75 leading-relaxed">
+          Quatre jours de glisse, de vent et de fête au cœur de l'océan Indien.
+          Riders internationaux, eaux turquoise et lagon mythique de Mourouk —
+          c'est ici que souffle le vent.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#inscription"
+            class="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-lagoon-500 hover:bg-lagoon-600 text-white font-semibold text-lg transition-all hover:scale-105 shadow-xl shadow-lagoon-400/40"
+          >
+            Je m'inscris
+            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+          <a
+            href="#competitions"
+            class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white hover:bg-lagoon-50 border-2 border-deep-900/10 text-deep-900 font-semibold text-lg transition-all"
+          >
+            Voir les compétitions
+          </a>
+        </div>
+
+        <!-- Prize money résumé -->
+        <div class="mt-12 inline-flex items-center gap-4 p-4 rounded-2xl bg-white/70 backdrop-blur border border-lagoon-200 shadow-lg shadow-lagoon-200/40">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-sun-400 to-coral-500 flex items-center justify-center text-white shadow-md">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118L2.05 10.1c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.518-4.674z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-deep-900 text-lg">2 650 € de prize money</div>
+            <div class="text-sm text-deep-900/60">Big Air · Wingfoil · Slalom · Mini Raid</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visuel poster (droite) -->
+      <div class="lg:col-span-5 hidden lg:block">
+        <div class="relative animate-float">
+          <!-- Halo derrière le visuel -->
+          <div class="absolute -inset-8 bg-gradient-to-br from-lagoon-300/40 via-lagoon-400/30 to-lagoon-200/20 rounded-[3rem] blur-2xl"></div>
+          <div class="relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-lagoon-500/30 ring-1 ring-white">
+            <img
+              src="/poster.jpeg"
+              alt="Affiche RIKF 2026 — Rodrigues International Kite Surf Festival"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <!-- Badge flottant 11e édition -->
+          <div class="absolute -top-4 -left-4 px-5 py-3 rounded-2xl bg-coral-500 text-white shadow-xl shadow-coral-500/40 rotate-[-6deg]">
+            <div class="font-display text-3xl leading-none">11<sup>e</sup></div>
+            <div class="text-xs uppercase tracking-widest">édition</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <a
+    href="#about"
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 text-deep-900/50 hover:text-deep-900 animate-scroll-hint"
+    aria-label="Défiler"
+  >
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </a>
+</section>
