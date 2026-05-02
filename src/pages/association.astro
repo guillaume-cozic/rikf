@@ -198,166 +198,37 @@ const pillars = [
     </section>
 
     <!-- SOUTENIR -->
-    <section id="contact" class="relative py-20 sm:py-28 overflow-hidden">
+    <section class="relative py-20 sm:py-28 overflow-hidden">
       <div class="absolute inset-0 bg-lagoon-wave opacity-90"></div>
       <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/10 to-white/40"></div>
 
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h2 class="font-display text-5xl sm:text-6xl md:text-7xl uppercase leading-tight text-white drop-shadow-lg">
-            Nous <span class="text-deep-900">soutenir</span>
-          </h2>
-          <p class="mt-6 text-lg text-white/95 drop-shadow max-w-2xl mx-auto">
-            Sponsoring, dons de matériel, mécénat, bénévolat — toutes les bonnes
-            volontés font avancer l'association.
-          </p>
-        </div>
-
-        <!-- Formulaire de contact -->
-        <form
-          id="contact-form"
-          class="mt-12 p-6 sm:p-8 rounded-3xl bg-white/95 backdrop-blur shadow-2xl border border-white space-y-5"
-          novalidate
-        >
-          <div class="grid sm:grid-cols-2 gap-5">
-            <div>
-              <label for="contact-name" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
-                Nom <span class="text-coral-500">*</span>
-              </label>
-              <input
-                type="text"
-                id="contact-name"
-                name="name"
-                required
-                placeholder="Votre nom"
-                class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition"
-              />
-            </div>
-            <div>
-              <label for="contact-email" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
-                Email <span class="text-coral-500">*</span>
-              </label>
-              <input
-                type="email"
-                id="contact-email"
-                name="email"
-                required
-                placeholder="vous@exemple.com"
-                class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label for="contact-subject" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
-              Sujet
-            </label>
-            <select
-              id="contact-subject"
-              name="subject"
-              class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 transition"
-            >
-              <option value="Sponsoring RIKF 2026">Sponsoring RIKF 2026</option>
-              <option value="Mécénat / dons">Mécénat / dons</option>
-              <option value="Don de matériel">Don de matériel</option>
-              <option value="Bénévolat">Bénévolat</option>
-              <option value="Autre demande">Autre demande</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="contact-message" class="block text-xs uppercase tracking-widest text-deep-900/70 font-semibold mb-2">
-              Message <span class="text-coral-500">*</span>
-            </label>
-            <textarea
-              id="contact-message"
-              name="message"
-              required
-              rows="5"
-              placeholder="Présentez votre projet, vos questions ou vos disponibilités..."
-              class="w-full px-4 py-3 rounded-xl bg-lagoon-50 border border-lagoon-200 focus:border-lagoon-500 focus:ring-2 focus:ring-lagoon-300 focus:outline-none text-deep-900 placeholder:text-deep-900/40 transition resize-none"
-            ></textarea>
-          </div>
-
-          <p
-            id="contact-error"
-            class="hidden text-sm text-coral-500 font-medium"
-            role="alert"
-          >
-            Merci de remplir les champs obligatoires.
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between pt-2">
-            <p class="text-xs text-deep-900/60">
-              En cliquant sur envoyer, votre messagerie s'ouvre avec un brouillon pré-rempli.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <a
-                href="/"
-                class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-deep-900/5 hover:bg-deep-900/10 text-deep-900 font-semibold text-sm transition"
-              >
-                Retour au festival
-              </a>
-              <button
-                type="submit"
-                class="group inline-flex items-center justify-center gap-3 px-7 py-3 rounded-full bg-lagoon-500 hover:bg-lagoon-600 text-white font-semibold transition-all hover:scale-105 shadow-xl shadow-lagoon-400/30"
-              >
-                Envoyer le message
-                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </form>
-
-        <p class="mt-6 text-center text-sm text-white/85">
-          Préférez un contact direct ?
-          <a href="mailto:mouroukwindsports@gmail.com" class="underline decoration-sun-400 decoration-2 underline-offset-4 hover:text-sun-400 transition">
-            mouroukwindsports@gmail.com
-          </a>
-          · <a href="tel:+23059073807" class="underline decoration-sun-400 decoration-2 underline-offset-4 hover:text-sun-400 transition">+230 59073807</a>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-display text-5xl sm:text-6xl md:text-7xl uppercase leading-tight text-white drop-shadow-lg">
+          Nous <span class="text-deep-900">soutenir</span>
+        </h2>
+        <p class="mt-6 text-lg text-white/95 drop-shadow max-w-2xl mx-auto">
+          Sponsoring, dons de matériel, mécénat, bénévolat — toutes les bonnes
+          volontés font avancer l'association.
         </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="mailto:mouroukwindsports@gmail.com?subject=Soutenir%20l'association%20RIKF"
+            class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white hover:bg-sun-400 text-deep-900 font-semibold transition-all hover:scale-105 shadow-xl"
+          >
+            Nous contacter
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+          <a
+            href="/"
+            class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-deep-900 hover:bg-deep-800 text-white font-semibold transition-all"
+          >
+            Retour au festival
+          </a>
+        </div>
       </div>
     </section>
-
-    <script is:inline>
-      (function () {
-        const form = document.getElementById("contact-form");
-        const error = document.getElementById("contact-error");
-        if (!form) return;
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          const name = form.querySelector("[name=name]").value.trim();
-          const email = form.querySelector("[name=email]").value.trim();
-          const subject = form.querySelector("[name=subject]").value;
-          const message = form.querySelector("[name=message]").value.trim();
-
-          if (!name || !email || !message) {
-            error.classList.remove("hidden");
-            return;
-          }
-          error.classList.add("hidden");
-
-          const body =
-            "Bonjour,\n\n" +
-            message +
-            "\n\n— " +
-            name +
-            "\n" +
-            email;
-
-          const mailto =
-            "mailto:mouroukwindsports@gmail.com" +
-            "?subject=" +
-            encodeURIComponent("[RIKF] " + subject) +
-            "&body=" +
-            encodeURIComponent(body);
-
-          window.location.href = mailto;
-        });
-      })();
-    </script>
   </main>
 
   <Footer />
